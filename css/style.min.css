@@ -614,6 +614,7 @@ textarea.input {
   border-radius: 26px;
   padding: 0px 0px 50% 0px;
   position: relative;
+  height: 0;
 }
 @media (max-width: 767.98px) {
   .video-watch {
@@ -625,22 +626,32 @@ textarea.input {
   background: #ffffff;
   border: 2px solid #ebeff3;
 }
-.video-watch__video img,
-.video-watch__video video,
-.video-watch__video iframe {
-  height: 0;
-  max-height: 100%;
-  max-width: 100%;
-  min-height: 100%;
-  min-width: 100%;
-  width: 0;
+.video-watch__video img, .video-watch__video video {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   object-fit: cover;
+}
+.video-watch__video video,
+.video-watch__video iframe,
+.video-watch__video object,
+.video-watch__video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 26px;
+}
+.video-watch__video iframe {
+  height: 0 !important;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  min-height: 100% !important;
+  min-width: 100% !important;
+  width: 0 !important;
 }
 .video-watch__icon {
   position: absolute;
@@ -658,12 +669,12 @@ textarea.input {
 }
 
 .amp-active iframe {
-  height: 0;
-  max-height: 100%;
-  max-width: 100%;
-  min-height: 100%;
-  min-width: 100%;
-  width: 0;
+  height: 0 !important;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  min-height: 100% !important;
+  min-width: 100% !important;
+  width: 0 !important;
 }
 
 .coins img {
