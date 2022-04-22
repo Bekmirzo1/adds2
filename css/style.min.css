@@ -612,18 +612,13 @@ textarea.input {
 .video-watch {
   box-shadow: 0px 30px 54px rgba(0, 8, 81, 0.1);
   border-radius: 26px;
-  min-height: 600px;
-  min-height: 600px;
+  padding: 0px 0px 50% 0px;
   position: relative;
-}
-@media (max-width: 1240px) {
-  .video-watch {
-    min-height: calc(200px + 400 * ((100vw - 375px) / 865));
-  }
 }
 @media (max-width: 767.98px) {
   .video-watch {
     box-shadow: 4px 4px 20px rgba(0, 8, 81, 0.1);
+    padding: 0px 0px 59.7014925373% 0px;
   }
 }
 .video-watch_no {
@@ -637,7 +632,6 @@ textarea.input {
   top: 0;
   left: 0;
   border-radius: 26px;
-  overflow: hidden;
 }
 .video-watch__video img,
 .video-watch__video video,
@@ -716,7 +710,7 @@ textarea.input {
 }
 
 ._anim-default._anim-items {
-  transition: all 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s, visibility 0.8s ease 0s, transform 0.8s ease 0s;
   opacity: 0;
   visibility: hidden;
 }
@@ -731,7 +725,7 @@ textarea.input {
 }
 ._anim-inner ._anim-items {
   display: block;
-  transition: all 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s, visibility 0.8s ease 0s, transform 0.8s ease 0s;
   transform: translate(0, 100%);
 }
 ._anim-inner ._anim-items._anim {
@@ -1863,6 +1857,11 @@ textarea.input {
   left: 10%;
   width: 38.26px;
 }
+@media (min-width: 1023.98px) {
+  .ru .fullscreen__coin_1 {
+    top: 78%;
+  }
+}
 .fullscreen__coin_1._anim {
   animation-duration: 5s;
 }
@@ -1888,7 +1887,7 @@ textarea.input {
   .fullscreen__coin_1 {
     width: 34.04px;
     left: -1%;
-    top: -9%;
+    top: -17%;
   }
 }
 .fullscreen__coin_1 img {
@@ -1977,6 +1976,9 @@ textarea.input {
     width: 26.28px;
     top: 18%;
     left: 96%;
+  }
+  .ru .fullscreen__coin_4 {
+    top: 62%;
   }
   .fullscreen__coin_4._anim {
     animation-duration: 3.5s;

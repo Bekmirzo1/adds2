@@ -1222,9 +1222,7 @@
                     <div class="watch-main__video video-watch">
                         <div class="video-watch__video">
                             <iframe src="https://www.youtube.com/embed/_xyXb_dSuY8" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                         <!-- <a href="" class="video-watch__icon _watch-icon">
                             <img src="img/icons/play.svg" alt="" class="_watch-icon__play">
@@ -2217,7 +2215,7 @@
                                 доходах, если ваша текущая
                                 платформа медиации выиграет тест.
                             </div>
-                            <a href="" class="test__button btn btn_main">
+                            <a href="#signup" class="test__button btn btn_main _popup-link">
                                 Провести тест
                             </a>
                         </div>
@@ -2284,7 +2282,8 @@
                                         CEO, EvKar Games
                                     </div>
                                     <div class="slider-happy__text">
-                                        «В CAS не нужно ежедневно мануально контролировать ценовые флоры и водопады. У нас появилось 2-3 часа свободного времени каждый день. И это здорово!»
+                                        «В CAS не нужно ежедневно мануально контролировать ценовые флоры и водопады. У
+                                        нас появилось 2-3 часа свободного времени каждый день. И это здорово!»
                                     </div>
                                 </div>
                                 <div class="slider-happy__slide swiper-slide">
@@ -2304,7 +2303,8 @@
                                         CEO, Vasilkoff Cy Ltd
                                     </div>
                                     <div class="slider-happy__text">
-                                        «Мой рекламный доход увеличился в 3 раза после перехода на CAS и июне 2021 г. И он продолжает расти»
+                                        «Мой рекламный доход увеличился в 3 раза после перехода на CAS и июне 2021 г. И
+                                        он продолжает расти»
                                     </div>
                                 </div>
                             </div>
@@ -2355,9 +2355,10 @@
                             </div>
                             <form action="" class="hug__form form">
                                 <div class="hug__email form__input">
-                                    <input autocomplete="off" type="text" class="input" placeholder="Введите ваш e-mail">
+                                    <input autocomplete="off" type="text" class="input"
+                                        placeholder="Введите ваш e-mail">
                                 </div>
-                                <button class="hug__button btn btn_main">
+                                <button href="#thanks" class="hug__button btn btn_main _popup-link">
                                     Хочу лайфхаки
                                 </button>
                             </form>
@@ -2418,7 +2419,7 @@
                         <a href="">Видеоинструкция</a>
                     </li>
                     <li class="footer__list2-item">
-                        <a href="">Провести A/B тест</a>
+                        <a href="#signup" class="_popup-link">Провести A/B тест</a>
                     </li>
                     <li class="footer__list2-item">
                         <a href="">Реферральная программа</a>
@@ -2490,122 +2491,122 @@
 </footer>
     </div>
     <div class="popup popup_login login-popup">
-	<div class="popup__content">
-		<div class="popup__body login-popup__body">
-			<h3 class="login-popup__title popup__title">Log In</h3>
-			<form action="" class="login-popup__form">
-				<div class="login-popup__rows form__rows">
-					<div class="login-popup__input form__input">
-						<input autocomplete="off" type="text" class="input" placeholder="Enter your e-mail">
-					</div>
-					<div class="login-popup__input form__input form__input_password">
-						<input autocomplete="off" type="password" class="input" placeholder="Password">
-						<span class="form__eye _show">
-							<img src="img/icons/eye.svg" alt="">
-						</span>
-					</div>
-				</div>
-				<button type="submit" class="login-popup__button btn btn_main">
-					Log In
-				</button>
-			</form>
-			<div class="login-popup__sign">
-				<div class="login-popup__sign-text">
-					Dont have an account?
-				</div>
-				<a href="#signup" class="login-popup__sign-link btn _popup-link">
-					Sign Up
-				</a>
-			</div>
-			<div class="popup__close"></div>
-		</div>
-	</div>
+    <div class="popup__content">
+        <div class="popup__body login-popup__body">
+            <h3 class="login-popup__title popup__title">Log In</h3>
+            <form action="" class="login-popup__form">
+                <div class="login-popup__rows form__rows">
+                    <div class="login-popup__input form__input">
+                        <input autocomplete="off" type="text" class="input" placeholder="Enter your e-mail">
+                    </div>
+                    <div class="login-popup__input form__input form__input_password">
+                        <input autocomplete="off" type="password" class="input" placeholder="Password">
+                        <span class="form__eye _show">
+                            <img src="img/icons/eye.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+                <button type="submit" class="login-popup__button btn btn_main">
+                    Log In
+                </button>
+            </form>
+            <div class="login-popup__sign">
+                <div class="login-popup__sign-text">
+                    Dont have an account?
+                </div>
+                <a href="#signup" class="login-popup__sign-link btn _popup-link">
+                    Sign Up
+                </a>
+            </div>
+            <div class="popup__close"></div>
+        </div>
+    </div>
 </div>
 <div class="popup popup_signup signup-popup">
-	<div class="popup__content">
-		<div class="popup__body signup-popup__body">
-			<h3 class="signup-popup__title popup__title">
-				Submit <span>your application</span>
-			</h3>
-			<form action="" class="signup-popup__form">
-				<div class="signup-popup__rows form__rows">
-					<div class="signup-popup__input form__input">
-						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-							placeholder="What is your name?*" class="input">
-					</div>
-					<div class="signup-popup__row form__row">
-						<div class="form__input">
-							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-								placeholder="Your e-mail*" class="input">
-						</div>
-						<div class="form__media">
-							<select name="form[]" class="icon" data-type="icon" data-icon-placeholder="Messenger ID*">
-								<option value="1" class="_icon-telegram" selected>Telegram</option>
-								<option value="3" class="_icon-whatsapp">WhatsApp</option>
-								<option value="3" class="_icon-viber">Viber</option>
-								<option value="3" class="_icon-f-messenger">Facebook Messenger</option>
-								<option value="2" class="_icon-linkedin2">LinkedIn</option>
-							</select>
-						</div>
-					</div>
-					<div class="signup-popup__row form__row">
-						<div class="form__input">
-							<input autocomplete="off" type="password" name="form[]" placeholder="Create password*"
-								class="input">
-						</div>
-						<div class="form__input">
-							<input autocomplete="off" type="password" name="form[]" placeholder="Repeat password*"
-								class="input">
-						</div>
-					</div>
-					<div class="signup-popup__input form__input">
-						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="App link"
-							class="input">
-					</div>
-					<div class="signup-popup__select form__select">
-						<select name="form[]" class="sel" data-type="input"
-							data-placeholder="How did you hear about CAS?">
-							<option value="1" selected>At the conference</option>
-							<option value="2">Friend recomendation</option>
-							<option value="3">Telegram channel</option>
-							<option value="4">Facebook</option>
-							<option value="5">LinkedIn</option>
-							<option value="6">Other</option>
-						</select>
-					</div>
-					<div class="form__input form__input_textarea">
-						<textarea autocomplete="off" name="form[]" placeholder="Leave your comment" data-error="Ошибка"
-							class="input"></textarea>
-					</div>
-					<div class="signup-popup__captcha">
-						<img src="img/captcha.jpg" alt="">
-					</div>
-				</div>
-				<button type="submit" class="signup-popup__button btn btn_main">
-					Submit
-				</button>
-			</form>
-			<div class="popup__close"></div>
-		</div>
-	</div>
+    <div class="popup__content">
+        <div class="popup__body signup-popup__body">
+            <h3 class="signup-popup__title popup__title">
+                Submit <span>your application</span>
+            </h3>
+            <form action="" class="signup-popup__form">
+                <div class="signup-popup__rows form__rows">
+                    <div class="signup-popup__input form__input">
+                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                            placeholder="What is your name?*" class="input">
+                    </div>
+                    <div class="signup-popup__row form__row">
+                        <div class="form__input">
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                placeholder="Your e-mail*" class="input">
+                        </div>
+                        <div class="form__media">
+                            <select name="form[]" class="icon" data-type="icon" data-icon-placeholder="Messenger ID*">
+                                <option value="1" class="_icon-telegram" selected>Telegram</option>
+                                <option value="3" class="_icon-whatsapp">WhatsApp</option>
+                                <option value="3" class="_icon-viber">Viber</option>
+                                <option value="3" class="_icon-f-messenger">Facebook Messenger</option>
+                                <option value="2" class="_icon-linkedin2">LinkedIn</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="signup-popup__row form__row">
+                        <div class="form__input">
+                            <input autocomplete="off" type="password" name="form[]" placeholder="Create password*"
+                                class="input">
+                        </div>
+                        <div class="form__input">
+                            <input autocomplete="off" type="password" name="form[]" placeholder="Repeat password*"
+                                class="input">
+                        </div>
+                    </div>
+                    <div class="signup-popup__input form__input">
+                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="App link"
+                            class="input">
+                    </div>
+                    <div class="signup-popup__select form__select">
+                        <select name="form[]" class="sel" data-type="input"
+                            data-placeholder="How did you hear about CAS?">
+                            <option value="1" selected>At the conference</option>
+                            <option value="2">Friend recomendation</option>
+                            <option value="3">Telegram channel</option>
+                            <option value="4">Facebook</option>
+                            <option value="5">LinkedIn</option>
+                            <option value="6">Other</option>
+                        </select>
+                    </div>
+                    <div class="form__input form__input_textarea">
+                        <textarea autocomplete="off" name="form[]" placeholder="Leave your comment" data-error="Ошибка"
+                            class="input"></textarea>
+                    </div>
+                    <div class="signup-popup__captcha">
+                        <img src="img/captcha.jpg" alt="">
+                    </div>
+                </div>
+                <button type="submit" class="signup-popup__button btn btn_main">
+                    Submit
+                </button>
+            </form>
+            <div class="popup__close"></div>
+        </div>
+    </div>
 </div>
 <div class="popup popup_thanks thanks-popup">
-	<div class="popup__content">
-		<div class="popup__body thanks-popup__body">
-			<div class="thanks-popup__mark">
-				<img src="img/icons/chek-big.svg" alt="">
-			</div>
-			<h3 class="thanks-popup__title popup__title">Congratulations!</h3>
-			<div class="thanks-popup__text">
-				Your application has been <span>successfully submitted.</span> 
-				<p> <span>Our support</span> <span> team will contact you soon.</span></p>
-			</div>
-			<a href="" class="thanks-popup__button btn btn_main">
-				Close
-			</a>
-			<div class="popup__close"></div>
-		</div>
-	</div>
+    <div class="popup__content">
+        <div class="popup__body thanks-popup__body">
+            <div class="thanks-popup__mark">
+                <img src="img/icons/chek-big.svg" alt="">
+            </div>
+            <h3 class="thanks-popup__title popup__title">Спасибо!</h3>
+            <div class="thanks-popup__text">
+                Ваша заявка принята
+                <p>В ближайшее время с вами свяжется <span>служба поддержки</span></p>
+            </div>
+            <a href="" class="thanks-popup__button btn btn_main">
+                Close
+            </a>
+            <div class="popup__close"></div>
+        </div>
+    </div>
 </div>
     <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
