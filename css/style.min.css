@@ -612,14 +612,13 @@ textarea.input {
 .video-watch {
   box-shadow: 0px 30px 54px rgba(0, 8, 81, 0.1);
   border-radius: 26px;
-  padding: 0px 0px 50% 0px;
+  padding: 0px 0px 56.25% 0px;
   position: relative;
   height: 0;
 }
 @media (max-width: 767.98px) {
   .video-watch {
     box-shadow: 4px 4px 20px rgba(0, 8, 81, 0.1);
-    padding: 0px 0px 59.7014925373% 0px;
   }
 }
 .video-watch_no {
