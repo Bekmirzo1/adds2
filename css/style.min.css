@@ -562,6 +562,10 @@ textarea.input {
   }
 }
 
+._no-wrap {
+  white-space: nowrap;
+}
+
 ._line-cat {
   width: 100%;
   overflow: hidden;
@@ -4446,8 +4450,8 @@ textarea.input {
   }
 }
 .news__slider {
-  padding: 0 20px;
-  margin: 0 -20px;
+  padding: 20px;
+  margin: -20px;
 }
 .news__slide {
   border: 2px solid #e8e8e8;
@@ -4515,6 +4519,14 @@ textarea.input {
 @media (max-width: 1240px) {
   .news__item-title {
     font-size: calc(18px + 6 * ((100vw - 375px) / 865));
+  }
+}
+.ru .news__item-title {
+  font-size: 22px;
+}
+@media (max-width: 1240px) {
+  .ru .news__item-title {
+    font-size: calc(18px + 4 * ((100vw - 375px) / 865));
   }
 }
 .news__text {
