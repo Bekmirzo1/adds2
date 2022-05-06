@@ -4188,6 +4188,9 @@ textarea.input {
     border: none;
   }
 }
+.activities__nav .slider-arrow_next.swiper-button-disabled {
+  display: none;
+}
 .activities__pagination {
   padding: 50px 0px 0px 0px;
   display: flex;
