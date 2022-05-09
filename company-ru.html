@@ -492,10 +492,10 @@
                             </div>
                             <form action="" class="earn__form form">
                                 <div class="earn__input form__input">
-                                    <input autocomplete="off" type="text" name="form[]"
+                                    <input autocomplete="off" type="text" name="form[]" required pattern="\S+@[a-z]+.[a-z]+"
                                         placeholder="Введи адрес электронной почты" class="input">
                                 </div>
-                                <a href="#thanks" class="earn__button btn btn_white _popup-link">
+                                <button type="submit" class="earn__button btn btn_white _popup-link">
                                     Получить
                                 </a>
                             </form>
@@ -651,10 +651,10 @@
             <form action="https://cleveradssolutions.com/login"  method="POST" class="login-popup__form">
                 <div class="login-popup__rows form__rows">
                     <div class="login-popup__input form__input">
-                        <input autocomplete="off" type="text" class="input" placeholder="Введите свой e-mail">
+                        <input autocomplete="off" type="text" class="input" placeholder="Введите свой e-mail" pattern="\S+@[a-z]+.[a-z]+" required>
                     </div>
                     <div class="login-popup__input form__input form__input_password">
-                        <input autocomplete="off" type="password" class="input" placeholder="Пароль">
+                        <input autocomplete="off" type="password" class="input" placeholder="Пароль" required>
                         <span class="form__eye _show">
                             <img src="img/icons/eye.svg" alt="">
                         </span>
