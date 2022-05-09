@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -239,10 +240,13 @@
 							class="input"></textarea>
 					</div>
 					<div class="signup-popup__captcha">
-						<img src="img/captcha.jpg" alt="">
+						<!-- <img src="img/captcha.jpg" alt=""> -->
+                        <div class="g-recaptcha" data-sitekey="6LflZNYfAAAAAETeHiyc4EaptFvHw4BfJr7VQHbA"></div>
+                        <!-- <br/>
+                        <input type="submit" value="Submit"> -->
 					</div>
 				</div>
-				<button type="submit" href="#thanks" class="signup-popup__button btn btn_main _popup-link">
+				<button type="submit" class="signup-popup__button btn btn_main">
 					Submit
 				</button>
 			</form>
@@ -261,7 +265,7 @@
 				Your application has been <span>successfully submitted.</span>
 				<p> <span>Our support</span> <span> team will contact you soon.</span></p>
 			</div>
-			<a href="" class="thanks-popup__button btn btn_main _popup-close">
+			<a href="" class="thanks-popup__button btn btn_main">
 				Close
 			</a>
 			<div class="popup__close"></div>
@@ -277,9 +281,9 @@
 			<h3 class="thanks-popup__title popup__title">Done!</h3>
 			<div class="thanks-popup__text">
 				Your e-mail has been successfully
-				<p><span>subscribed to our life hacks</span></p>
+				<p><span>subscribed to our  life hacks</span></p>
 			</div>
-			<a href="" class="thanks-popup__button btn btn_main _popup-close">
+			<a href="" class="thanks-popup__button btn btn_main">
 				Close
 			</a>
 			<div class="popup__close"></div>

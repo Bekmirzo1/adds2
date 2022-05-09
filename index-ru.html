@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="ru">
@@ -1271,7 +1272,7 @@
                                 </div>
                                 <div class="columns-why__text">
                                     <p>Вам вообще не нужно тратить время на CAS.</p>
-                                    <p>Система полностью автоматическая</p>
+                                    <p>Система полностью автоматическая.</p>
                                 </div>
                             </div>
                         </div>
@@ -2355,8 +2356,8 @@
                             </div>
                             <form action="" class="hug__form form">
                                 <div class="hug__email form__input">
-                                    <input autocomplete="off" type="text" class="input"
-                                        placeholder="Введите ваш e-mail">
+                                    <input autocomplete="off" type="text" pattern="\S+@[a-z]+.[a-z]+" class="input"
+                                        placeholder="Введите ваш e-mail" required>
                                 </div>
                                 <button href="#success" class="hug__button btn btn_main _popup-link">
                                     Хочу лайфхаки
@@ -2532,16 +2533,16 @@
             <h3 class="signup-popup__title popup__title">
                 Оставить заявку
             </h3>
-            <form action="" class="signup-popup__form">
+            <form action="" method="POST" class="signup-popup__form">
                 <div class="signup-popup__rows form__rows">
                     <div class="signup-popup__input form__input">
                         <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                            placeholder="Ваше имя*" class="input">
+                            placeholder="Ваше имя*" class="input" required>
                     </div>
                     <div class="signup-popup__row form__row">
                         <div class="form__input">
                             <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                                placeholder="Ваш e-mail*" class="input">
+                                placeholder="Ваш e-mail*" class="input" pattern="\S+@[a-z]+.[a-z]+" required>
                         </div>
                         <div class="form__media">
                             <select name="form[]" class="icon" data-type="icon" data-icon-placeholder="Messenger ID*">
@@ -2555,13 +2556,14 @@
                     </div>
                     <div class="signup-popup__row form__row">
                         <div class="form__input">
-                            <input autocomplete="off" type="password" name="form[]" placeholder="Введите пароль*"
-                                class="input">
+                            <input autocomplete="off" type="password" name="password" placeholder="Введите пароль*"
+                                class="input" id="password" onkeyup='check();' required>
                         </div>
                         <div class="form__input">
-                            <input autocomplete="off" type="password" name="form[]" placeholder="Повторить пароль*"
-                                class="input">
+                            <input autocomplete="off" type="password" name="confirm_password" placeholder="Повторить пароль*"
+                                class="input" onkeyup='check();' id="confirm_password" required>
                         </div>
+                        <span class="form__input__errmessage" id='message'></span>
                     </div>
                     <div class="signup-popup__input form__input">
                         <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ссылка на приложение"
@@ -2583,10 +2585,13 @@
                             class="input"></textarea>
                     </div>
                     <div class="signup-popup__captcha">
-                        <img src="img/captcha.jpg" alt="">
+                        <!-- <img src="img/captcha.jpg" alt=""> -->
+                        <div class="g-recaptcha" data-sitekey="6LflZNYfAAAAAETeHiyc4EaptFvHw4BfJr7VQHbA"></div>
+                        <!-- <br/>
+                        <input type="submit" value="Submit"> -->
                     </div>
                 </div>
-				<button type="submit" href="#thanks" class="signup-popup__button btn btn_main _popup-link">
+                <button type="submit" class="signup-popup__button btn btn_main" id="checkconfirm">
                     Отправить
                 </button>
             </form>
@@ -2605,7 +2610,7 @@
                 Ваша заявка принята
                 <p>В ближайшее время с вами свяжется <span>служба поддержки</span></p>
             </div>
-			<a href="" class="thanks-popup__button btn btn_main _popup-close">
+            <a href="" class="thanks-popup__button btn btn_main">
                 Close
             </a>
             <div class="popup__close"></div>
@@ -2623,7 +2628,7 @@
                 Вы успешно подписались на рассылку
                 <span>с нашими лайфхаками</span>
             </div>
-			<a href="" class="thanks-popup__button btn btn_main _popup-close">
+            <a href="" class="thanks-popup__button btn btn_main">
                 Закрыть
             </a>
             <div class="popup__close"></div>

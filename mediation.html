@@ -771,12 +771,12 @@
 				<div class="signup-popup__rows form__rows">
 					<div class="signup-popup__input form__input">
 						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-							placeholder="What is your name?*" class="input">
+							placeholder="What is your name?*" class="input" required>
 					</div>
 					<div class="signup-popup__row form__row">
 						<div class="form__input">
 							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-								placeholder="Your e-mail*" class="input">
+								placeholder="Your e-mail*" class="input" pattern="\S+@[a-z]+.[a-z]+" required >
 						</div>
 						<div class="form__media">
 							<select name="form[]" class="icon" data-type="icon" data-icon-placeholder="Messenger ID*">
@@ -790,12 +790,12 @@
 					</div>
 					<div class="signup-popup__row form__row">
 						<div class="form__input">
-							<input autocomplete="off" type="password" name="form[]" placeholder="Create password*"
-								class="input">
+							<input autocomplete="off" type="password" name="password" placeholder="Create password*"
+								class="input" id="password" onkeyup='check();' required>
 						</div>
 						<div class="form__input">
-							<input autocomplete="off" type="password" name="form[]" placeholder="Repeat password*"
-								class="input">
+							<input autocomplete="off" type="password" name="confirm_password" placeholder="Repeat password*"
+								class="input" onkeyup='check();' id="confirm_password" required>
 						</div>
 					</div>
 					<div class="signup-popup__input form__input">
@@ -818,10 +818,13 @@
 							class="input"></textarea>
 					</div>
 					<div class="signup-popup__captcha">
-						<img src="img/captcha.jpg" alt="">
+						<!-- <img src="img/captcha.jpg" alt=""> -->
+                        <div class="g-recaptcha" data-sitekey="6LflZNYfAAAAAETeHiyc4EaptFvHw4BfJr7VQHbA"></div>
+                        <!-- <br/>
+                        <input type="submit" value="Submit"> -->
 					</div>
 				</div>
-				<button type="submit" href="#thanks" class="signup-popup__button btn btn_main _popup-link">
+				<button type="submit" class="signup-popup__button btn btn_main" id="checkconfirm">
 					Submit
 				</button>
 			</form>
@@ -840,7 +843,7 @@
 				Your application has been <span>successfully submitted.</span>
 				<p> <span>Our support</span> <span> team will contact you soon.</span></p>
 			</div>
-			<a href="" class="thanks-popup__button btn btn_main _popup-close">
+			<a href="" class="thanks-popup__button btn btn_main">
 				Close
 			</a>
 			<div class="popup__close"></div>
@@ -856,9 +859,9 @@
 			<h3 class="thanks-popup__title popup__title">Done!</h3>
 			<div class="thanks-popup__text">
 				Your e-mail has been successfully
-				<p><span>subscribed to our life hacks</span></p>
+				<p><span>subscribed to our  life hacks</span></p>
 			</div>
-			<a href="" class="thanks-popup__button btn btn_main _popup-close">
+			<a href="" class="thanks-popup__button btn btn_main">
 				Close
 			</a>
 			<div class="popup__close"></div>
