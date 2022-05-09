@@ -290,10 +290,10 @@
 			<form action="https://cleveradssolutions.com/login"  method="POST" class="login-popup__form">
 				<div class="login-popup__rows form__rows">
 					<div class="login-popup__input form__input">
-						<input autocomplete="off" type="text" class="input" placeholder="Enter your e-mail" pattern="\S+@[a-z]+.[a-z]+" required>
+						<input autocomplete="off" type="text" class="input" placeholder="Enter your e-mail" >
 					</div>
 					<div class="login-popup__input form__input form__input_password">
-						<input autocomplete="off" type="password" class="input" placeholder="Password" required>
+						<input autocomplete="off" type="password" class="input" placeholder="Password">
 						<span class="form__eye _show">
 							<img src="img/icons/eye.svg" alt="">
 						</span>
@@ -351,6 +351,8 @@
 							<input autocomplete="off" type="password" name="confirm_password" placeholder="Repeat password*"
 								class="input" onkeyup='check();' id="confirm_password" required>
 						</div>
+                        <span class="form__input__errmessage" id='message'></span>
+
 					</div>
 					<div class="signup-popup__input form__input">
 						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="App link"
