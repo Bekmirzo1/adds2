@@ -154,17 +154,17 @@
                             <div class="contacts__rows form__rows">
                                 <div class="contacts__input form__input">
                                     <input autocomplete="off" type="text" name="form[]" placeholder="What is your name?"
-                                        class="input">
+                                        class="input" required>
                                 </div>
                                 <div class="contacts__input form__input">
                                     <input autocomplete="off" type="text" name="form[]" placeholder="Enter your e-mail"
-                                        class="input" pattern="\S+@[a-z]+.[a-z]+">
+                                        class="input" pattern="\S+@[a-z]+.[a-z]+" required>
                                 </div>
                                 <div class="contacts__textarea form__input form__input_textarea">
                                     <textarea autocomplete="off" name="form[]" placeholder="Enter your question"
-                                        class="input"></textarea>
+                                        class="input" required></textarea>
                                 </div>
-                                <button href="#thanks" type="submit" class="contacts__button btn btn_main _popup-link">
+                                <button type="submit" class="contacts__button btn btn_main _popup-link">
                                     Send a request
                                 </button>
                             </div>
