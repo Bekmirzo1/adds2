@@ -201,6 +201,7 @@ body._lock {
   padding-right: 20px;
   padding-left: 20px;
 }
+
 .form__input__errmessage {
   font-size: 14px;
 }
@@ -4183,16 +4184,14 @@ textarea.input {
   pointer-events: none;
 }
 .activities__nav .slider-arrow.swiper-button-disabled {
-  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
 }
 @media (min-width: 767.98px) {
   .activities__nav .slider-arrow {
     background-color: #fff;
     border: none;
   }
-}
-.activities__nav .slider-arrow_next.swiper-button-disabled {
-  display: none;
 }
 .activities__pagination {
   padding: 50px 0px 0px 0px;
@@ -4534,6 +4533,13 @@ textarea.input {
   .ru .news__item-title {
     font-size: calc(18px + 4 * ((100vw - 375px) / 865));
   }
+}
+.news__date {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #9da9b7;
+  margin: 0px 0px 6px 0px;
 }
 .news__text {
   font-size: 16px;
